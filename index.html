@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    @font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  }
+
+  /* Mobile Screens */
+@media screen and (max-width: 375px){
+    body {
+      background-color: #F4D04E;
+    }
+    .content-container{
+      box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+      width: 327px;
+      height: 501px;
+      border-radius: 20px;
+      border: 2px solid black;
+      background-color: hsl(0, 0%, 100%);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    
+    .img-illustration {
+      border-radius: 20px;
+      width: 279px;
+      height: 200px;
+
+    }
+
+    .content-flex-container {
+      width: 279px;
+      height: 173px;
+      border: 2px solid #F4D04E;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 0px;
+    }
+    
+    #learning {
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Figtree';
+      border-radius: 4px;
+      background-color: #F4D04E;
+      width: 73px;
+      height: 26px;
+      padding: 4px 12px;
+      margin-top: 0px;
+    }
+
+    .publish-date {
+      font-family: 'Figtree';
+      font-size: 16px;
+      width: 123px;
+      height: 18px;
+    }
+
+    .header {
+      /* color: #F4D04E; */
+      color: hsl(0, 0%, 7%);
+      font-family: "Figtree";
+      font-weight: 800;
+      width: 279px;
+      height: 30px;
+    }
+    .header:hover{
+       color: #F4D04E;
+    }
+    .header:active{
+       color: #F4D04E;
+    }
+    .header.focus{
+       color: #F4D04E;
+    }
+
+    .header-content {
+      color: hsl(0, 0%, 42%);
+      font-family: "Figtree";
+      width: 279px;
+      height: 63px;
+      margin-bottom: 0px;
+      
+    }
+
+    .author{
+      display: flex;
+      justify-content: flex-start;
+      gap: 12px;
+      width: 129px;
+      margin-top: 32px;
+
+
+    }
+    .author-pic {
+      border-radius: 100%;
+      width: 32px;
+      height: 32px;
+    }
+    .author-name {
+      font-family: "Figtree";
+      font-weight: 800;
+      width: 85;
+      padding-top:5px;
+      padding-bottom: 5px; 
+    }
+
+}
+
+/* For Large Screens >= 1440px */
+    body {
+      background-color: #F4D04E;
+    }
+    .content-container{
+      box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+      margin: auto;
+      width: 327px;
+      height: 501px;
+      border-radius: 20px;
+      border: 2px solid black;
+      background-color: hsl(0, 0%, 100%);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .content-flex-container {
+      width: 327px;
+      height: 173px;
+    }
+
+    .img-illustration {
+      border-radius: 20px;
+      /* border: 3px solid black; */
+      /* width: 279px;
+      height: 200px; */
+    }
+
+    #learning {
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Figtree';
+      border-radius: 4px;
+      background-color: #F4D04E;
+      width: 73px;
+      height: 26px;
+      padding: 4px 12px;
+      margin-top: 0px;
+    }
+
+    .publish-date {
+      font-family: 'Figtree';
+      font-size: 16px;
+    }
+
+    .header {
+      color: hsl(0, 0%, 7%);
+      font-family: "Figtree";
+      font-weight: 800;
+    }
+    .header:hover{
+       color: #F4D04E;
+    }
+    .header:active{
+       color: #F4D04E;
+    }
+    .header.focus{
+       color: #F4D04E;
+    }
+
+
+    .header-content {
+      color: hsl(0, 0%, 42%);
+      font-family: "Figtree";
+      margin-bottom: 0px;
+      
+    }
+
+    .author{
+      display: flex;
+      justify-content: flex-start;
+      gap: 12px;
+      width: 150px;
+      margin-top: 24px;
+
+    }
+    .author-pic {
+      border-radius: 100%;
+      width: 32px;
+      height: 32px;
+    }
+    .author-name {
+      font-family: "Figtree";
+      font-weight: 800;
+      width: 85;
+      padding-top:5px;
+      padding-bottom: 5px; 
+    }
+
+    footer {
+      margin-top: 70%;
+      text-align: center;
+    }
+
+
+</style>
+</head>
+<body>
+<div class="content-container">
+<!-- header illustration -->
+    <img class="img-illustration" src="./assets/images/illustration-article.svg"/>
+    <!-- content -->
+    <div class="content-flex-container">
+      <p id="learning">Learning</p>
+      <p class="publish-date">Published 21 Dec 2023</p>
+  
+      <h2 class="header"> HTML & CSS foundations </h2>
+
+      <p class="header-content">
+        These languages are the backbone of every website, 
+        defining structure, content, and presentation.
+      </p>
+    </div>
+    <!-- footer -->
+      <div class="author">
+        <img class="author-pic" src="./assets/images/image-avatar.webp" />
+        <span class="author-name">Greg Hooper</span>
+      </div>
+
+  <!-- </div> -->
+  
+
+</div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">4lphav01d</a>.
+  </footer>
+</body>
+</html>
