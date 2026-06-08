@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/4lphav01d/blog-preview-card)
+- Live Site URL: [Live Site](https://4lphav01d.github.io/blog-preview-card/)
 
 ## My process
 First off, I used semantic html, css to build the barebones of the project and after that I started using css to style the html skeleton.
